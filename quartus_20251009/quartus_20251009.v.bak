@@ -1,0 +1,9 @@
+module quartus_20251009(
+	input wire A,
+	input wire B,
+	output wire Y1,
+	output wire Y2
+);
+	assign Y1=~(A&B);
+	assign Y2=~A | ~B;
+endmodule
