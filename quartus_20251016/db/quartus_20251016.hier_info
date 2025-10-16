@@ -1,0 +1,20 @@
+|quartus_20251016
+a => nand_ab.IN0
+a => nand1.IN0
+a => nand2.IN1
+a => not_a.DATAIN
+a => comb.IN0
+a => or_wire.IN0
+b => nand_ab.IN1
+b => nand1.IN1
+b => nand3.IN1
+b => comb.IN1
+b => or_wire.IN1
+not_a <= a.DB_MAX_OUTPUT_PORT_TYPE
+and_ab <= nand_ab.DB_MAX_OUTPUT_PORT_TYPE
+or_ab <= comb.DB_MAX_OUTPUT_PORT_TYPE
+nor_ab <= or_wire.DB_MAX_OUTPUT_PORT_TYPE
+xor_ab <= comb.DB_MAX_OUTPUT_PORT_TYPE
+xnor_ab <= comb.DB_MAX_OUTPUT_PORT_TYPE
+
+
