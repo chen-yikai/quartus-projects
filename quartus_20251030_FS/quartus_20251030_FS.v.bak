@@ -1,0 +1,4 @@
+module quartus_20251030_FS(input a,input b,input bi,output diff,output bo);
+	assign diff = a ^ b ^ bi;
+	assign bo = (~a)&b | b &bi+(~a)&bi;
+endmodule
