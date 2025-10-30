@@ -1,0 +1,9 @@
+|quartus_20251030_HS
+a => diff.IN0
+a => bo.IN0
+b => diff.IN1
+b => bo.IN1
+diff <= diff.DB_MAX_OUTPUT_PORT_TYPE
+bo <= bo.DB_MAX_OUTPUT_PORT_TYPE
+
+
