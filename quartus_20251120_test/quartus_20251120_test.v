@@ -1,0 +1,21 @@
+module quartus_20251120_test(
+	input wire x,
+	input wire y,
+	input wire z,
+	
+	output wire a,
+	output wire b,
+	output wire c,
+	output wire d,
+	output wire e,
+	output wire f,
+	output wire g
+);
+	assign a = ~y&~z | ~x&~y | x&y;
+	assign b = y | ~x&z;
+	assign c = ~x | ~y&~z | y&z;
+	assign d = ~y&~z | x&~z;
+	assign e = ~x&z | x&y&~z;
+	assign f = ~y&~z | ~x&~y | ~x&z;
+	assign g = ~y | ~x&z | x&~z;
+endmodule
