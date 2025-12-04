@@ -1,0 +1,14 @@
+module quartus_20251204_multiplexer(
+    input [3:0] I,
+    input [1:0] S,
+    output O
+); 
+    wire a, b, c, d;
+
+    assign a = I[0] & ~S[1] & ~S[0];
+    assign b = I[1] & ~S[1] & S[0];
+    assign c = I[2] & S[1] & ~S[0];
+    assign d = I[3] & S[1] & S[0];
+
+    assign O = a | b | c | d;
+endmodule
