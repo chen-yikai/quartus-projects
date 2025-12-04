@@ -1,0 +1,12 @@
+module quartus_20251204_demux(
+    input I,
+    input [1:0] S,
+    output O0, O1, O2, O3
+);
+
+    assign O0 = (S == 2'b00) ? I : 0;
+    assign O1 = (S == 2'b01) ? I : 0;
+    assign O2 = (S == 2'b10) ? I : 0;
+    assign O3 = (S == 2'b11) ? I : 0;
+
+endmodule
