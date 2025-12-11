@@ -1,0 +1,189 @@
+Classic Timing Analyzer report for quartus_20251211_latch1
+Thu Dec 11 10:09:41 2025
+Quartus II Version 9.1 Build 350 03/24/2010 Service Pack 2 SJ Web Edition
+
+
+---------------------
+; Table of Contents ;
+---------------------
+  1. Legal Notice
+  2. Timing Analyzer Summary
+  3. Timing Analyzer Settings
+  4. Clock Settings Summary
+  5. Parallel Compilation
+  6. tsu
+  7. tco
+  8. th
+  9. Timing Analyzer Messages
+
+
+
+----------------
+; Legal Notice ;
+----------------
+Copyright (C) 1991-2010 Altera Corporation
+Your use of Altera Corporation's design tools, logic functions 
+and other software and tools, and its AMPP partner logic 
+functions, and any output files from any of the foregoing 
+(including device programming or simulation files), and any 
+associated documentation or information are expressly subject 
+to the terms and conditions of the Altera Program License 
+Subscription Agreement, Altera MegaCore Function License 
+Agreement, or other applicable license agreement, including, 
+without limitation, that your use is for the sole purpose of 
+programming logic devices manufactured by Altera and sold by 
+Altera or its authorized distributors.  Please refer to the 
+applicable agreement for further details.
+
+
+
++-------------------------------------------------------------------------------------------------------------------------------+
+; Timing Analyzer Summary                                                                                                       ;
++------------------------------+-------+---------------+-------------+---------+---------+------------+----------+--------------+
+; Type                         ; Slack ; Required Time ; Actual Time ; From    ; To      ; From Clock ; To Clock ; Failed Paths ;
++------------------------------+-------+---------------+-------------+---------+---------+------------+----------+--------------+
+; Worst-case tsu               ; N/A   ; None          ; 3.303 ns    ; D       ; Q$latch ; --         ; la       ; 0            ;
+; Worst-case tco               ; N/A   ; None          ; 6.997 ns    ; Q$latch ; Q       ; la         ; --       ; 0            ;
+; Worst-case th                ; N/A   ; None          ; -1.188 ns   ; D       ; Q$latch ; --         ; la       ; 0            ;
+; Total number of failed paths ;       ;               ;             ;         ;         ;            ;          ; 0            ;
++------------------------------+-------+---------------+-------------+---------+---------+------------+----------+--------------+
+
+
++-----------------------------------------------------------------------------------------------------------------------------------------------------+
+; Timing Analyzer Settings                                                                                                                            ;
++------------------------------------------------------------------------------------------------------+--------------------+------+----+-------------+
+; Option                                                                                               ; Setting            ; From ; To ; Entity Name ;
++------------------------------------------------------------------------------------------------------+--------------------+------+----+-------------+
+; Device Name                                                                                          ; EPM1270T144C5      ;      ;    ;             ;
+; Timing Models                                                                                        ; Final              ;      ;    ;             ;
+; Default hold multicycle                                                                              ; Same as Multicycle ;      ;    ;             ;
+; Cut paths between unrelated clock domains                                                            ; On                 ;      ;    ;             ;
+; Cut off read during write signal paths                                                               ; On                 ;      ;    ;             ;
+; Cut off feedback from I/O pins                                                                       ; On                 ;      ;    ;             ;
+; Report Combined Fast/Slow Timing                                                                     ; Off                ;      ;    ;             ;
+; Ignore Clock Settings                                                                                ; Off                ;      ;    ;             ;
+; Analyze latches as synchronous elements                                                              ; On                 ;      ;    ;             ;
+; Enable Recovery/Removal analysis                                                                     ; Off                ;      ;    ;             ;
+; Enable Clock Latency                                                                                 ; Off                ;      ;    ;             ;
+; Use TimeQuest Timing Analyzer                                                                        ; Off                ;      ;    ;             ;
+; Minimum Core Junction Temperature                                                                    ; 0                  ;      ;    ;             ;
+; Maximum Core Junction Temperature                                                                    ; 85                 ;      ;    ;             ;
+; Number of source nodes to report per destination node                                                ; 10                 ;      ;    ;             ;
+; Number of destination nodes to report                                                                ; 10                 ;      ;    ;             ;
+; Number of paths to report                                                                            ; 200                ;      ;    ;             ;
+; Report Minimum Timing Checks                                                                         ; Off                ;      ;    ;             ;
+; Use Fast Timing Models                                                                               ; Off                ;      ;    ;             ;
+; Report IO Paths Separately                                                                           ; Off                ;      ;    ;             ;
+; Perform Multicorner Analysis                                                                         ; Off                ;      ;    ;             ;
+; Reports the worst-case path for each clock domain and analysis                                       ; Off                ;      ;    ;             ;
+; Reports worst-case timing paths for each clock domain and analysis                                   ; On                 ;      ;    ;             ;
+; Specifies the maximum number of worst-case timing paths to report for each clock domain and analysis ; 100                ;      ;    ;             ;
+; Removes common clock path pessimism (CCPP) during slack computation                                  ; Off                ;      ;    ;             ;
+; Output I/O Timing Endpoint                                                                           ; Near End           ;      ;    ;             ;
++------------------------------------------------------------------------------------------------------+--------------------+------+----+-------------+
+
+
++------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Clock Settings Summary                                                                                                                                                             ;
++-----------------+--------------------+----------+------------------+---------------+--------------+----------+-----------------------+---------------------+--------+--------------+
+; Clock Node Name ; Clock Setting Name ; Type     ; Fmax Requirement ; Early Latency ; Late Latency ; Based on ; Multiply Base Fmax by ; Divide Base Fmax by ; Offset ; Phase offset ;
++-----------------+--------------------+----------+------------------+---------------+--------------+----------+-----------------------+---------------------+--------+--------------+
+; la              ;                    ; User Pin ; None             ; 0.000 ns      ; 0.000 ns     ; --       ; N/A                   ; N/A                 ; N/A    ;              ;
++-----------------+--------------------+----------+------------------+---------------+--------------+----------+-----------------------+---------------------+--------+--------------+
+
+
+Parallel compilation was disabled, but you have multiple processors available. Enable parallel compilation to reduce compilation time.
++-------------------------------------+
+; Parallel Compilation                ;
++----------------------------+--------+
+; Processors                 ; Number ;
++----------------------------+--------+
+; Number detected on machine ; 14     ;
+; Maximum allowed            ; 1      ;
++----------------------------+--------+
+
+
++---------------------------------------------------------------+
+; tsu                                                           ;
++-------+--------------+------------+------+---------+----------+
+; Slack ; Required tsu ; Actual tsu ; From ; To      ; To Clock ;
++-------+--------------+------------+------+---------+----------+
+; N/A   ; None         ; 3.303 ns   ; D    ; Q$latch ; la       ;
++-------+--------------+------------+------+---------+----------+
+
+
++---------------------------------------------------------------+
+; tco                                                           ;
++-------+--------------+------------+---------+----+------------+
+; Slack ; Required tco ; Actual tco ; From    ; To ; From Clock ;
++-------+--------------+------------+---------+----+------------+
+; N/A   ; None         ; 6.997 ns   ; Q$latch ; Q  ; la         ;
++-------+--------------+------------+---------+----+------------+
+
+
++---------------------------------------------------------------------+
+; th                                                                  ;
++---------------+-------------+-----------+------+---------+----------+
+; Minimum Slack ; Required th ; Actual th ; From ; To      ; To Clock ;
++---------------+-------------+-----------+------+---------+----------+
+; N/A           ; None        ; -1.188 ns ; D    ; Q$latch ; la       ;
++---------------+-------------+-----------+------+---------+----------+
+
+
++--------------------------+
+; Timing Analyzer Messages ;
++--------------------------+
+Info: *******************************************************************
+Info: Running Quartus II Classic Timing Analyzer
+    Info: Version 9.1 Build 350 03/24/2010 Service Pack 2 SJ Web Edition
+    Info: Processing started: Thu Dec 11 10:09:41 2025
+Info: Command: quartus_tan --read_settings_files=off --write_settings_files=off quartus_20251211_latch1 -c quartus_20251211_latch1
+Info: Started post-fitting delay annotation
+Info: Delay annotation completed successfully
+Warning: Timing Analysis is analyzing one or more combinational loops as latches
+    Warning: Node "Q$latch" is a latch
+Warning: Found pins functioning as undefined clocks and/or memory enables
+    Info: Assuming node "la" is a latch enable. Will not compute fmax for this pin.
+Info: tsu for register "Q$latch" (data pin = "D", clock pin = "la") is 3.303 ns
+    Info: + Longest pin to register delay is 5.258 ns
+        Info: 1: + IC(0.000 ns) + CELL(1.132 ns) = 1.132 ns; Loc. = PIN_55; Fanout = 1; PIN Node = 'D'
+        Info: 2: + IC(3.926 ns) + CELL(0.200 ns) = 5.258 ns; Loc. = LC_X1_Y10_N4; Fanout = 1; REG Node = 'Q$latch'
+        Info: Total cell delay = 1.332 ns ( 25.33 % )
+        Info: Total interconnect delay = 3.926 ns ( 74.67 % )
+    Info: + Micro setup delay of destination is 2.115 ns
+    Info: - Shortest clock path from clock "la" to destination register is 4.070 ns
+        Info: 1: + IC(0.000 ns) + CELL(1.132 ns) = 1.132 ns; Loc. = PIN_6; Fanout = 1; CLK Node = 'la'
+        Info: 2: + IC(2.427 ns) + CELL(0.511 ns) = 4.070 ns; Loc. = LC_X1_Y10_N4; Fanout = 1; REG Node = 'Q$latch'
+        Info: Total cell delay = 1.643 ns ( 40.37 % )
+        Info: Total interconnect delay = 2.427 ns ( 59.63 % )
+Info: tco from clock "la" to destination pin "Q" through register "Q$latch" is 6.997 ns
+    Info: + Longest clock path from clock "la" to source register is 4.070 ns
+        Info: 1: + IC(0.000 ns) + CELL(1.132 ns) = 1.132 ns; Loc. = PIN_6; Fanout = 1; CLK Node = 'la'
+        Info: 2: + IC(2.427 ns) + CELL(0.511 ns) = 4.070 ns; Loc. = LC_X1_Y10_N4; Fanout = 1; REG Node = 'Q$latch'
+        Info: Total cell delay = 1.643 ns ( 40.37 % )
+        Info: Total interconnect delay = 2.427 ns ( 59.63 % )
+    Info: + Micro clock to output delay of source is 0.000 ns
+    Info: + Longest register to pin delay is 2.927 ns
+        Info: 1: + IC(0.000 ns) + CELL(0.000 ns) = 0.000 ns; Loc. = LC_X1_Y10_N4; Fanout = 1; REG Node = 'Q$latch'
+        Info: 2: + IC(0.605 ns) + CELL(2.322 ns) = 2.927 ns; Loc. = PIN_1; Fanout = 0; PIN Node = 'Q'
+        Info: Total cell delay = 2.322 ns ( 79.33 % )
+        Info: Total interconnect delay = 0.605 ns ( 20.67 % )
+Info: th for register "Q$latch" (data pin = "D", clock pin = "la") is -1.188 ns
+    Info: + Longest clock path from clock "la" to destination register is 4.070 ns
+        Info: 1: + IC(0.000 ns) + CELL(1.132 ns) = 1.132 ns; Loc. = PIN_6; Fanout = 1; CLK Node = 'la'
+        Info: 2: + IC(2.427 ns) + CELL(0.511 ns) = 4.070 ns; Loc. = LC_X1_Y10_N4; Fanout = 1; REG Node = 'Q$latch'
+        Info: Total cell delay = 1.643 ns ( 40.37 % )
+        Info: Total interconnect delay = 2.427 ns ( 59.63 % )
+    Info: + Micro hold delay of destination is 0.000 ns
+    Info: - Shortest pin to register delay is 5.258 ns
+        Info: 1: + IC(0.000 ns) + CELL(1.132 ns) = 1.132 ns; Loc. = PIN_55; Fanout = 1; PIN Node = 'D'
+        Info: 2: + IC(3.926 ns) + CELL(0.200 ns) = 5.258 ns; Loc. = LC_X1_Y10_N4; Fanout = 1; REG Node = 'Q$latch'
+        Info: Total cell delay = 1.332 ns ( 25.33 % )
+        Info: Total interconnect delay = 3.926 ns ( 74.67 % )
+Info: Quartus II Classic Timing Analyzer was successful. 0 errors, 3 warnings
+    Info: Peak virtual memory: 192 megabytes
+    Info: Processing ended: Thu Dec 11 10:09:41 2025
+    Info: Elapsed time: 00:00:00
+    Info: Total CPU time (on all processors): 00:00:00
+
+
