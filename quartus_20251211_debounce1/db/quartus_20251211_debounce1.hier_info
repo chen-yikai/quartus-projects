@@ -1,0 +1,9 @@
+|quartus_20251211_debounce1
+R => always0.IN0
+R => always0.IN0
+S => always0.IN1
+S => always0.IN1
+Q <= Q$latch.DB_MAX_OUTPUT_PORT_TYPE
+nQ <= nQ$latch.DB_MAX_OUTPUT_PORT_TYPE
+
+
