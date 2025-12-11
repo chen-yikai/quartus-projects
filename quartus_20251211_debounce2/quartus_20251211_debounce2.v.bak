@@ -1,0 +1,17 @@
+module quartus_20251211(F,kin,kok);
+	input F,kin;
+	output kok;
+	reg [2:0] REG;
+	reg kok;
+	
+	always @(posedge F) begin;
+		REG[2]=REG[1];
+		REG[1]=REG[0];
+		REG[0]=!kin;
+	end
+	
+	always @(REG) begin
+		if(REG==3'b111) kok=0;
+		if(REG==3'b000) kok=1;
+	end
+endmodule

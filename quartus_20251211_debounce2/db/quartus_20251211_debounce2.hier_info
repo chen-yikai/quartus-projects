@@ -1,0 +1,8 @@
+|quartus_20251211_debounce2
+F => REG[0].CLK
+F => REG[1].CLK
+F => REG[2].CLK
+kin => REG[0].DATAIN
+kok <= kok$latch.DB_MAX_OUTPUT_PORT_TYPE
+
+
